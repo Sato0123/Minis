@@ -1,7 +1,7 @@
 from Crypto.Cipher import AES
 
-key = b"0123456789012346"
-iv = b" " * 16
+key = b"0123456789012346"  # 共通鍵
+iv = b" " * 16  # 単なるスペース
 assert len(key) == 16
 assert len(iv) == 16
 
