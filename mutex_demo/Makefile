@@ -1,16 +1,11 @@
-OUT:="main.exe"
-
-.PHONY: all lock clean
+.PHONY: run lock clean
 
 # lockなし
-all:
-	cc -o $(OUT) main.c
-	./$(OUT)
+run:
+	cc main.c
+	./a.out
 
 # lockあり
 lock:
-	cc -DLOCK=1 -o $(OUT) main.c
-	./$(OUT)
-
-clean:
-	rm -f $(OUT)
+	cc -DLOCK=1 main.c
+	./a.out

@@ -25,3 +25,12 @@ sequenceDiagram
     B->>C: store 101
     Note over C: counter = 101（本来は102）
 ```
+
+- ロックなし
+```
+make run
+```
+- ロック
+```
+make lock
+```

@@ -28,10 +28,11 @@ int main(){
   pthread_create(&t1, NULL, worker, NULL);
   pthread_create(&t2, NULL, worker, NULL);
 
+  // joinでスレッドの終了を待つ
   pthread_join(t1,NULL);
   pthread_join(t2,NULL);
   pthread_mutex_destroy(&mtx);
 
-  printf("%d",counter);
+  printf("%d\n",counter);
 }
 
