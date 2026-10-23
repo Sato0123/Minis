@@ -1,0 +1,13 @@
+services:
+  server:
+    tty: true
+    image: httpd:latest
+    build:
+      context: .
+    container_name: server
+    ports:
+      - "80:80"
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./htdocs:/usr/local/apache2/htdocs
+

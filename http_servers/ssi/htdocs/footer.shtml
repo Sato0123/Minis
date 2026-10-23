@@ -1,0 +1,5 @@
+<!-- footer.html -->
+<footer>
+  <p>最終更新: <!--#echo var="LAST_MODIFIED" --></p>
+  <p>&copy; 2024 My Site</p>
+</footer>

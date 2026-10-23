@@ -1,0 +1,13 @@
+services:
+  server:
+    tty: true
+    build:
+      context: .
+    container_name: server
+    ports:
+      - "80:80"
+    volumes:
+      - ./cgi1.py:/usr/local/apache2/cgi-bin/cgi1.py
+      - ./cgi2.py:/usr/local/apache2/cgi-bin/cgi2.py
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+

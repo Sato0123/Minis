@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+</head>
+
+<body>
+  <!--#include virtual="/header.shtml" -->
+  <main>
+    <h1>About</h1>
+    <p>このサイトについて</p>
+  </main>
+  <!--#include virtual="/footer.shtml" -->
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+<!-- header.html -->
+<header>
+  <nav>
+    <a href="/">ホーム</a>
+    <a href="/about.shtml">About</a>
+  </nav>
+</header>

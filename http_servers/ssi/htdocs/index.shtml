@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title><!--#echo var="DOCUMENT_NAME" --></title>
+</head>
+
+<body>
+  <!--#include virtual="/header.shtml" -->
+  <main>
+    <h1>クエリストリング</h1>
+    <!--#echo var="QUERY_STRING" -->
+  </main>
+  <!--#include virtual="/footer.shtml" -->
+</body>
+
+</html>

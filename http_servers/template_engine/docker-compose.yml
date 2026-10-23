@@ -1,0 +1,14 @@
+services:
+  server:
+    tty: true
+    image: php:8.2-apache
+    build:
+      context: .
+    container_name: server
+    ports:
+      - "80:80"
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./var/www/html:/var/www/html
+
+

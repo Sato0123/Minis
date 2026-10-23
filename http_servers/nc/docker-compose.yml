@@ -1,0 +1,16 @@
+services:
+  server:
+    tty: true
+    build:
+      context: .
+    container_name: server
+    ports:
+      - "80:8080"
+    command: 
+      - bash 
+      - -c 
+      - |
+        cat /header.txt /response.html > /response.txt 
+        while true; do
+          cat /response.txt | nc -l -p 8080 -q 0
+        done
