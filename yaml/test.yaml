@@ -1,0 +1,10 @@
+name: John Doe
+age: 30
+is_active: true
+skills:
+  - Python
+  - JavaScript
+  - Docker
+address:
+  zipcode: "123-0001"
+  city: New York
